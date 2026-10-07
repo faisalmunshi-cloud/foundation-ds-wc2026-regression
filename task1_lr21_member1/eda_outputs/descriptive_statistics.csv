@@ -1,0 +1,10 @@
+,count,mean,std,min,25%,50%,75%,max,skew
+Goal Difference (Target),104.0,0.83,1.91,-4.0,0.0,1.0,2.0,6.0,0.0
+X1 FIFA Rank Diff (Away-Home),104.0,8.88,33.23,-76.0,-10.75,8.5,30.0,77.0,-0.03
+X2 Squad Value Diff EURm (Home-Away),104.0,183.77,552.68,-1325.45,-141.42,146.0,481.21,1498.8,0.06
+X3 Squad Age Diff (Home-Away),104.0,-0.01,1.49,-3.58,-1.11,0.02,1.02,3.38,-0.02
+X4 Prior WC Best Result Diff (Home-Away),104.0,0.97,3.42,-7.0,-1.0,1.0,4.0,7.0,-0.25
+X5 Qualifying GD Diff (Home-Away),104.0,1.31,11.35,-28.0,-7.0,2.0,8.0,32.0,0.11
+X6 Host Advantage Diff (Home-Away),104.0,0.03,0.38,-1.0,0.0,0.0,0.0,1.0,0.31
+X7 Confederation Strength Diff (Home-Away),104.0,0.45,2.21,-5.0,-1.0,1.0,2.0,4.0,-0.51
+X8 Rest Days Diff (Home-Away),104.0,-0.09,0.76,-2.0,0.0,0.0,0.0,3.0,0.41

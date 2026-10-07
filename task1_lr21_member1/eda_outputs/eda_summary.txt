@@ -1,0 +1,48 @@
+======================================================================
+LR 2.1 -- Exploratory Data Analysis
+Rows: 104   Columns analysed: 9 (1 target + 8 features)
+======================================================================
+
+--- 1. Missing-value check ---
+No missing values in target or any of the 8 features (0/104 in every column).
+
+--- 2. Descriptive statistics ---
+                                            count    mean     std      min     25%     50%     75%      max  skew
+Goal Difference (Target)                    104.0    0.83    1.91    -4.00    0.00    1.00    2.00     6.00  0.00
+X1 FIFA Rank Diff (Away-Home)               104.0    8.88   33.23   -76.00  -10.75    8.50   30.00    77.00 -0.03
+X2 Squad Value Diff EURm (Home-Away)        104.0  183.77  552.68 -1325.45 -141.42  146.00  481.21  1498.80  0.06
+X3 Squad Age Diff (Home-Away)               104.0   -0.01    1.49    -3.58   -1.11    0.02    1.02     3.38 -0.02
+X4 Prior WC Best Result Diff (Home-Away)    104.0    0.97    3.42    -7.00   -1.00    1.00    4.00     7.00 -0.25
+X5 Qualifying GD Diff (Home-Away)           104.0    1.31   11.35   -28.00   -7.00    2.00    8.00    32.00  0.11
+X6 Host Advantage Diff (Home-Away)          104.0    0.03    0.38    -1.00    0.00    0.00    0.00     1.00  0.31
+X7 Confederation Strength Diff (Home-Away)  104.0    0.45    2.21    -5.00   -1.00    1.00    2.00     4.00 -0.51
+X8 Rest Days Diff (Home-Away)               104.0   -0.09    0.76    -2.00    0.00    0.00    0.00     3.00  0.41
+
+--- 3. Target normality (Shapiro-Wilk) ---
+W = 0.9555, p = 0.0015  -> target deviates from normal (p<0.05) -- expected for a bounded integer count like goal difference
+
+--- 4. Correlation of each feature with the target (Goal Difference) ---
+  X1 FIFA Rank         r = +0.605
+  X2 Squad Value       r = +0.544
+  X4 Prior WC Best     r = +0.480
+  X7 Confederation     r = +0.352
+  X5 Qualifying GD     r = +0.292
+  X8 Rest Days         r = +0.189
+  X6 Host Advantage    r = +0.141
+  X3 Squad Age         r = -0.079
+
+--- 5. Multicollinearity check (pairwise correlation among the 8 features) ---
+  WARNING: X1 FIFA Rank <-> X2 Squad Value  r = +0.670  (|r| >= 0.6, worth a VIF check before final model)
+  WARNING: X1 FIFA Rank <-> X4 Prior WC Best  r = +0.716  (|r| >= 0.6, worth a VIF check before final model)
+  WARNING: X2 Squad Value <-> X4 Prior WC Best  r = +0.797  (|r| >= 0.6, worth a VIF check before final model)
+
+--- 6. Variance Inflation Factor (VIF) per feature ---
+  (VIF < 5 generally fine; VIF > 10 signals serious multicollinearity)
+  X4 Prior WC Best     VIF =   3.80
+  X2 Squad Value       VIF =   3.56
+  X1 FIFA Rank         VIF =   2.97
+  X5 Qualifying GD     VIF =   1.92
+  X7 Confederation     VIF =   1.81
+  X6 Host Advantage    VIF =   1.58
+  X3 Squad Age         VIF =   1.54
+  X8 Rest Days         VIF =   1.13

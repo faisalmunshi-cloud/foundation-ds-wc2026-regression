@@ -1,0 +1,9 @@
+Var,Feature,Pearson r,CI95 low,CI95 high,p (Pearson),Spearman rho,p (Spearman)
+X1,X1 FIFA Rank Diff (Away-Home),0.605,0.467,0.715,0.0,0.564,0.0
+X2,X2 Squad Value Diff EURm (Home-Away),0.544,0.393,0.667,0.0,0.553,0.0
+X3,X3 Squad Age Diff (Home-Away),-0.079,-0.267,0.116,0.42722,-0.055,0.58124
+X4,X4 Prior WC Best Result Diff (Home-Away),0.48,0.316,0.616,0.0,0.465,0.0
+X5,X5 Qualifying GD Diff (Home-Away),0.292,0.106,0.459,0.00262,0.312,0.00126
+X6,X6 Host Advantage Diff (Home-Away),0.141,-0.053,0.324,0.15431,0.125,0.20485
+X7,X7 Confederation Strength Diff (Home-Away),0.352,0.171,0.51,0.00024,0.27,0.00556
+X8,X8 Rest Days Diff (Home-Away),0.189,-0.003,0.368,0.05429,0.199,0.0429

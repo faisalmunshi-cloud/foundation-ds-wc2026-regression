@@ -1,0 +1,9 @@
+Variable,Name,Reason,Expected effect on Goal Difference,Source
+X1,FIFA Ranking Difference (Away rank - Home rank),Official summary of recent results and opponent strength; better-ranked teams should outscore weaker ones.,+,"FIFA Men's World Ranking, 11 Jun 2026 (inside.fifa.com; cross-checked with MLSsoccer, ESPN)"
+X2,"Squad Market Value Difference (EUR m, Home - Away)",Market value prices individual quality and depth; richer squads should win by more.,+,"Transfermarkt values via Planet Football (values identical in articles dated 16 Jun, 18 Jun, 15 Jul, 28 Jul 2026)"
+X3,"Squad Average Age Difference (years, Home - Away)","Older squads bring experience but lose pace and stamina; effect direction is ambiguous, so no strong prior.",+/- (unclear),"Official 26-man FIFA squads announced 2 Jun 2026 (RotoWire, CBS Sports)"
+X4,Prior World Cup Best Result Difference (ordinal 1-8),Tournament pedigree reflects football culture and big-match experience.,+,"FIFA World Cup records (Czechoslovakia->Czechia, West Germany->Germany, Zaire->DR Congo)"
+X5,Qualifying Goal Difference (Home - Away),Goal difference over 2023-25 qualifiers is a pre-tournament proxy for attacking and defensive form.,+,Wikipedia 2026 FIFA World Cup qualification pages (all confederations); hosts set to 0 (assumption)
+X6,Host Advantage Difference (1 / 0 / -1),Hosts play on home soil with crowd support and no travel.,+,"Tournament hosting arrangement: USA, Mexico, Canada"
+X7,Confederation Strength Difference (tier 1-6),Teams from stronger confederations face tougher competition and tend to perform better at World Cups.,+,Author-assigned ordinal tier from historical World Cup results (not an official metric)
+X8,Rest Days Difference (Home - Away),More recovery time between matches should reduce fatigue and injury risk.,+ (weak),Computed from the verified match schedule; opening matches assumed 14 days
