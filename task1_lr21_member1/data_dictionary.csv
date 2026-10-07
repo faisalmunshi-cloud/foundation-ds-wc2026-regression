@@ -1,0 +1,10 @@
+Column,Type,Description,Source
+Match #,int,Row ID 1-104 in chronological order of listing,Wikipedia/FBref
+Stage,text,"Group stage, Round of 32, Round of 16, Quarter-final, Semi-final, Third-place match, Final",FBref
+Group,text,Group letter A-L for group stage; blank for knockouts,Wikipedia
+Date,date,Match date (YYYY-MM-DD),Wikipedia/FBref
+Home / Away,text,Team listed first / second in the fixture. Not a true home advantage (except hosts),Wikipedia/FBref
+Home Score / Away Score,int,Goals after normal time and extra time; shoot-out goals excluded,Wikipedia/FBref
+Goal Difference (Target),int,Home Score - Away Score; range -4 to +6,Computed
+X1..X8,numeric,"Feature differences, see variable_justification.csv for meaning, expected sign and source",See justification
+Home/Away raw columns,numeric/text,"Underlying team-level values behind each feature, kept for transparency and for building LR 2.2",team_level_data_48.csv
