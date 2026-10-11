@@ -1,0 +1,2 @@
+Comparison,OLS Mean Fold RMSE,Final Mean Fold RMSE,t statistic,p value,Significant at 0.05
+Ridge vs OLS (full),1.2142250384263449,1.2045218720436146,2.4132557724058037,0.019595599284096186,True
