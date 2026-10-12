@@ -1,0 +1,2 @@
+Comparison,Mean LR2.1 absolute error,Mean LR2.2 absolute error,t statistic,p value,Significant at 0.05
+Absolute error: LR2.1 direct vs LR2.2-derived,1.164673424168806,1.1988299031705572,-0.6949876612244735,0.4886279100525853,False
