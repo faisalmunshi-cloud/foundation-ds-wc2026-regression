@@ -1,0 +1,9 @@
+Feature,Pearson r,p (Pearson),Spearman rho,p (Spearman)
+X1 Team rank,-0.367,0.0,-0.406,0.0
+X2 Opp rank,0.345,0.0,0.329,0.0
+X3 Squad value,0.375,0.0,0.417,0.0
+X4 Host,0.104,0.13443,0.119,0.08682
+X5 Qual GF/match,0.26,0.00015,0.307,1e-05
+X6 Opp qual GA/match,0.09,0.19604,0.027,0.69872
+X7 Knockout,-0.013,0.84926,0.026,0.70603
+X8 WC apps,0.336,0.0,0.336,0.0

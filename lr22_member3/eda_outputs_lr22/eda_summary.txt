@@ -1,0 +1,70 @@
+LR 2.2 EDA
+rows: 208  features: 8
+
+1. Missing values
+Goals Scored (Target)                        0
+X1 Team FIFA Rank                            0
+X2 Opponent FIFA Rank                        0
+X3 Team Squad Value EURm                     0
+X4 Team Is Host                              0
+X5 Team Qual Goals Scored per Match          0
+X6 Opponent Qual Goals Conceded per Match    0
+X7 Knockout Match                            0
+X8 Team WC Appearances Before 2026           0
+dtype: int64
+
+2. Descriptive statistics
+                                           count     mean      std     min      25%      50%     75%       max   skew
+Goals Scored (Target)                      208.0    1.481    1.393   0.000    0.000    1.000    2.00     7.000  1.149
+X1 Team FIFA Rank                          208.0   27.760   22.945   1.000    8.750   22.500   41.00    85.000  0.855
+X2 Opponent FIFA Rank                      208.0   27.760   22.945   1.000    8.750   22.500   41.00    85.000  0.855
+X3 Team Squad Value EURm                   208.0  451.250  424.245  19.930  139.050  332.500  589.90  1520.000  1.129
+X4 Team Is Host                            208.0    0.072    0.259   0.000    0.000    0.000    0.00     1.000  3.332
+X5 Team Qual Goals Scored per Match        208.0    2.283    0.943   0.778    1.596    2.167    2.75     5.800  1.040
+X6 Opponent Qual Goals Conceded per Match  208.0    0.650    0.397   0.000    0.333    0.667    0.80     2.083  1.102
+X7 Knockout Match                          208.0    0.308    0.463   0.000    0.000    0.000    1.00     1.000  0.839
+X8 Team WC Appearances Before 2026         208.0    8.149    6.210   0.000    3.000    6.000   14.00    22.000  0.492
+
+3. Target (goals scored)
+value counts:
+Goals Scored (Target)
+0    55
+1    71
+2    39
+3    25
+4    10
+5     5
+6     2
+7     1
+Name: count, dtype: int64
+mean = 1.481, variance = 1.942
+skew raw goals = 1.149, skew log(goals+1) = 0.03
+Shapiro-Wilk raw: W = 0.861, p = 0.00000
+Shapiro-Wilk log: W = 0.896, p = 0.00000
+
+5. Correlation with target
+             Feature  Pearson r  p (Pearson)  Spearman rho  p (Spearman)
+        X1 Team rank     -0.367      0.00000        -0.406       0.00000
+         X2 Opp rank      0.345      0.00000         0.329       0.00000
+      X3 Squad value      0.375      0.00000         0.417       0.00000
+             X4 Host      0.104      0.13443         0.119       0.08682
+    X5 Qual GF/match      0.260      0.00015         0.307       0.00001
+X6 Opp qual GA/match      0.090      0.19604         0.027       0.69872
+         X7 Knockout     -0.013      0.84926         0.026       0.70603
+          X8 WC apps      0.336      0.00000         0.336       0.00000
+
+Feature pairs with |r| >= 0.6
+X1 Team rank <-> X3 Squad value  r = -0.704
+X1 Team rank <-> X8 WC apps  r = -0.716
+X3 Squad value <-> X8 WC apps  r = 0.712
+
+7. VIF
+             Feature  VIF
+      X3 Squad value 3.17
+          X8 WC apps 2.71
+        X1 Team rank 2.59
+         X7 Knockout 1.32
+    X5 Qual GF/match 1.24
+         X2 Opp rank 1.22
+             X4 Host 1.14
+X6 Opp qual GA/match 1.08

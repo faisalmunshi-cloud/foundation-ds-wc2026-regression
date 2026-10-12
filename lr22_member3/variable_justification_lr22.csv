@@ -1,0 +1,9 @@
+Variable,Name,Reason,Expected effect on Goals Scored,Source
+X1,Team FIFA Rank,Better ranked teams (lower number) have better results so they should score more.,- (lower rank number = more goals),"FIFA Men's World Ranking, 11 Jun 2026 (inside.fifa.com)"
+X2,Opponent FIFA Rank,Playing a weaker opponent (higher rank number) should make scoring easier.,+,"FIFA Men's World Ranking, 11 Jun 2026"
+X3,Team Squad Value (EUR m),A more valuable squad has more quality attacking players.,+,"Transfermarkt values via Planet Football"
+X4,Team Is Host (1/0),Hosts play at home with crowd support and no long travel.,+,"Hosting arrangement: USA, Mexico, Canada"
+X5,Team Qualifying Goals Scored per Match,How well the team attacked in its qualifying campaign before the tournament.,+,"Wikipedia 2026 FIFA World Cup qualification pages (UEFA, CONMEBOL, CAF, AFC, CONCACAF, OFC, inter-confederation play-offs)"
+X6,Opponent Qualifying Goals Conceded per Match,How leaky the opponent's defence was in qualifying.,+,Same Wikipedia qualification pages
+X7,Knockout Match (1/0),Knockout games are tighter and teams take fewer risks. Stage is fixed by the schedule before kickoff.,- (weak),Match schedule (FBref / Wikipedia)
+X8,Team World Cup Appearances Before 2026,More tournament experience may help a team handle World Cup pressure.,+ (weak),Wikipedia: National team appearances in the FIFA World Cup

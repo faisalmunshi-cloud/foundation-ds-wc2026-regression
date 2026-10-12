@@ -1,0 +1,10 @@
+LR 2.2 Variable,Shared with LR 2.1?,LR 2.1 Variable it overlaps with,Note
+X1 Team FIFA Rank,Yes (1 of 4),X1 FIFA Rank Diff,Same FIFA ranking data. LR 2.2 uses the team's own rank instead of a difference.
+X2 Opponent FIFA Rank,Yes (2 of 4),X1 FIFA Rank Diff,Same FIFA ranking data. Counted as shared to be safe.
+X3 Team Squad Value EURm,Yes (3 of 4),X2 Squad Value Diff,Same Transfermarkt data. Own value instead of difference.
+X4 Team Is Host,Yes (4 of 4),X6 Host Advantage Diff,Same host information. 1/0 for the team instead of 1/0/-1.
+X5 Team Qual Goals Scored per Match,No,(none),New data. LR 2.1 X5 uses qualifying goal DIFFERENCE. This uses goals scored only and per match.
+X6 Opponent Qual Goals Conceded per Match,No,(none),New data. Goals conceded per match by the opponent in qualifying.
+X7 Knockout Match,No,(none),New. Not used in LR 2.1.
+X8 Team WC Appearances Before 2026,No,(none),New data. LR 2.1 X4 uses best ever finish. This uses number of past tournaments.
+TOTAL,4 shared / 4 new,,Within the brief limit of maximum 4 shared variables.

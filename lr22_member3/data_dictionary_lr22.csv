@@ -1,0 +1,18 @@
+Column,Type,Description,Source
+Row ID,int,Row number 1-208,Computed
+Match #,int,Match ID 1-104 (same as LR 2.1). Each match appears twice,worldcup2026_all_104_matches.csv
+Stage,text,"Group stage, Round of 32, Round of 16, Quarter-final, Semi-final, Third-place match, Final",FBref / Wikipedia
+Group,text,Group A-L for group stage; '-' for knockouts,Wikipedia
+Date,date,Match date YYYY-MM-DD,FBref / Wikipedia
+Fixture Slot,text,Home slot = team listed first in the fixture. Not a real home advantage. ID field only,Computed
+Team,text,The team this row is about,FBref / Wikipedia
+Opponent,text,The team it played against,FBref / Wikipedia
+Goals Scored (Target),int,Goals scored by Team in normal time plus extra time. Penalty shoot-out goals not counted. Range 0-7,FBref / Wikipedia
+X1 Team FIFA Rank,int,Team FIFA rank on 11 Jun 2026 (1 = best),FIFA
+X2 Opponent FIFA Rank,int,Opponent FIFA rank on 11 Jun 2026,FIFA
+X3 Team Squad Value EURm,float,Team squad market value in million euro,Transfermarkt via Planet Football
+X4 Team Is Host,int,1 if Team is USA / Mexico / Canada else 0,Tournament hosts
+X5 Team Qual Goals Scored per Match,float,Team goals scored / matches played in its final qualifying stage (plus play-offs). Hosts = median of 45 qualifiers (2.167),Wikipedia qualification pages
+X6 Opponent Qual Goals Conceded per Match,float,Opponent goals conceded / matches in its final qualifying stage (plus play-offs). Hosts = median (0.667),Wikipedia qualification pages
+X7 Knockout Match,int,1 if knockout stage match else 0,Match schedule
+X8 Team WC Appearances Before 2026,int,Number of World Cups the team played 1930-2022 (West Germany counted as Germany; Czechoslovakia as Czechia; Zaire as DR Congo),Wikipedia

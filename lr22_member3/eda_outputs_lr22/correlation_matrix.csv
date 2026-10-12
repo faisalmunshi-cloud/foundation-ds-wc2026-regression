@@ -1,0 +1,10 @@
+,X1 Team FIFA Rank,X2 Opponent FIFA Rank,X3 Team Squad Value EURm,X4 Team Is Host,X5 Team Qual Goals Scored per Match,X6 Opponent Qual Goals Conceded per Match,X7 Knockout Match,X8 Team WC Appearances Before 2026,Goals Scored (Target)
+X1 Team FIFA Rank,1.0,-0.119,-0.704,-0.09,-0.229,0.019,-0.307,-0.716,-0.367
+X2 Opponent FIFA Rank,-0.119,1.0,0.01,0.085,-0.047,0.224,-0.307,0.085,0.345
+X3 Team Squad Value EURm,-0.704,0.01,1.0,-0.127,0.377,-0.079,0.328,0.712,0.375
+X4 Team Is Host,-0.09,0.085,-0.127,1.0,-0.034,0.11,0.056,0.083,0.104
+X5 Team Qual Goals Scored per Match,-0.229,-0.047,0.377,-0.034,1.0,-0.044,0.139,0.12,0.26
+X6 Opponent Qual Goals Conceded per Match,0.019,0.224,-0.079,0.11,-0.044,1.0,-0.153,-0.046,0.09
+X7 Knockout Match,-0.307,-0.307,0.328,0.056,0.139,-0.153,1.0,0.268,-0.013
+X8 Team WC Appearances Before 2026,-0.716,0.085,0.712,0.083,0.12,-0.046,0.268,1.0,0.336
+Goals Scored (Target),-0.367,0.345,0.375,0.104,0.26,0.09,-0.013,0.336,1.0

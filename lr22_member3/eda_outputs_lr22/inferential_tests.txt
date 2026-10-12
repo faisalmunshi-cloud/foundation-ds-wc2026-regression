@@ -1,0 +1,26 @@
+Test 1: goals vs higher ranked and lower ranked opponents
+H0: mean goals are the same in both groups
+H1: mean goals are different
+opponent ranked higher: n = 104, mean = 0.846, 95% CI [0.663, 1.029]
+opponent ranked lower: n = 104, mean = 2.115, 95% CI [1.827, 2.404]
+difference in means = 1.269 goals
+95% CI of difference approx [0.931, 1.607]
+Welch t-test: t = 7.365, p = 0.000000
+Mann-Whitney U (check, goals are counts): U = 8271.5, p = 0.000000
+paired t-test by match (better ranked team vs worse ranked team): t = 7.872, p = 0.000000
+result: reject H0 at 5% level
+
+Test 2: hosts vs non-hosts
+host: n = 15, mean = 2.000, 95% CI [1.189, 2.811]
+non-host: n = 193, mean = 1.440, 95% CI [1.244, 1.637]
+Welch t-test: t = 1.432, p = 0.1715
+
+Test 3: group stage vs knockout matches
+group stage: n = 144, mean = 1.493, 95% CI [1.251, 1.735]
+knockout: n = 64, mean = 1.453, 95% CI [1.148, 1.758]
+Welch t-test: t = 0.204, p = 0.8385
+
+Overall mean goals per team per match
+mean = 1.481, 95% CI [1.290, 1.671]
+
+note: the two rows of a match are not fully independent, so p-values are a bit optimistic
