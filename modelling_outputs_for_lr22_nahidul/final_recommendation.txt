@@ -1,0 +1,15 @@
+HIT140 Assessment 3 - Member 4 Nahidul
+LR 2.2 Final Model Recommendation
+============================================================
+Selected model: Ridge
+Target mode: raw
+Mean grouped-CV MAE: 0.9215
+Mean grouped-CV RMSE: 1.2045
+Mean grouped-CV R2: 0.2226
+Full-data tuning parameters: {'model__alpha': 50}
+Paired t-test vs raw OLS: t=2.4133, p=0.0196
+
+Selection rule: lowest repeated grouped-CV RMSE among the best raw-target
+candidate and the tested log-target formulations. MAE and R2 are reported
+as supporting metrics. Grouped validation prevents two rows from one match
+appearing on opposite sides of a train/test split.
